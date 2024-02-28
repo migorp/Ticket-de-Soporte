@@ -1,7 +1,7 @@
 
 
-mkdir grado
-cd grado
+
+cd Ticket-de-Soporte
 conda create --name ticket python=3.10
 conda activate ticket
 pip install Django==3.*
