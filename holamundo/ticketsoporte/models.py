@@ -3,7 +3,6 @@ from django.db import models
 
 
 
-
 CH_rol = [
     ('Cliente', 'Cliente'),
     ('Usuario', 'Usuario'),

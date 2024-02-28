@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Clientes</title>
+</head>
+<body>
+
+    <h2>Vista General de Clientes</h2>
+    
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Correo</th>
+        </tr>
+        {% for cliente in clientes %}
+        <tr>
+            <td>{{ cliente.id }}</td>
+            <td>{{ cliente.identificacion }}</td>
+            <td>{{ cliente.nombre }}</td>
+            <td>{{ cliente.telefono }}</td>
+            <td>{{ cliente.correo }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Tickets</title>
+</head>
+<body>
+
+    <h2>Vista General de Tickets</h2>
+    
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Cliente</th>
+            <th>Dispositivo</th>
+            <th>Fecha Registro</th>
+            <th>Descripción</th>
+            <th>Costo</th>
+            <th>Estado</th>
+        </tr>
+        {% for IncidenciaNoIniciado in IncidenciaNoIniciados %}
+        <tr>
+            <td>{{ IncidenciaNoIniciado.id }}</td>
+            <td>{{ IncidenciaNoIniciado.cliente }}</td>
+            <td>{{ IncidenciaNoIniciado.dispositivo }}</td>
+            <td>{{ IncidenciaNoIniciado.fecha_hora_registro }}</td>
+            <td>{{ IncidenciaNoIniciado.descripcion_corta }}</td>
+            <td>{{ IncidenciaNoIniciado.costo_revision }}</td>
+            <td>{{ IncidenciaNoIniciado.estado }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+        
+
+</body>
+</html>

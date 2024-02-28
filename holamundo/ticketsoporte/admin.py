@@ -42,3 +42,4 @@ class IncidenciaAnuladoAdmin(admin.ModelAdmin):
     list_display = ('id', 'cliente', 'dispositivo', 'incidencia_no_iniciado', 'resultado_anulado', 'observaciones_anulado', )
 
 
+
